@@ -1,0 +1,80 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: linear-gradient(135deg, #ff9a8e 0%, #ff6a88 100%); /* Latar belakang gradien */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    overflow-x: hidden; /* Mencegah scroll horizontal */
+}
+
+#container {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 600px;
+    margin: 50px auto;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    border: 5px solid gold;
+}
+
+#judul {
+    font-size: 2.5em;
+    animation: bounce 1s infinite alternate;
+}
+@keyframes bounce {
+    from { transform: translate(0); }
+    to { transform: translateY(-10px); }
+}
+
+button {
+    background-color: #ffeb3b;
+    color: #333;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #fdd835;
+    transform: scale(1.05);
+}
+
+.hidden {
+    display: none;
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+
+.visible {
+    display: block;
+    opacity: 1;
+}
+
+#pesankonten h2 {
+    color: #ffeb3b;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 2.2em;
+}
+
+#kue { width: 80%;
+max-width: 250px;
+margin: 20px 0;
+border-radius: 10px;
+animation: spin 10s linear infinite;
+}
+
+#konfeti {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Penting agar tidak menghalangi klik */
+    overflow: hidden;
+}
